@@ -17,6 +17,17 @@
 > [!IMPORTANT]
 > The npm package is not published yet. This repository currently focuses on architecture, rules, and documentation.
 
+## Table of Contents
+
+- [Vision](#vision)
+- [AI Agent Workflow System](#ai-agent-workflow-system)
+- [Planned Installation (When Published)](#planned-installation-when-published)
+- [What The Package Will Cover](#what-the-package-will-cover)
+- [Documentation System](#documentation-system)
+- [Repository Layout](#repository-layout)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Vision
 
 `repo-hc` is designed to standardize how an AI agent maintains a repository by enforcing repeatable housekeeping practices:
@@ -26,6 +37,8 @@
 - security-aware changes
 - synchronized documentation
 - explicit auditability of AI-assisted work
+
+Initial optimization target: **OpenAI Codex**.
 
 ## AI Agent Workflow System
 
@@ -40,16 +53,13 @@ AI-assisted work in this repository is guided by [AGENTS.md](./AGENTS.md) and th
 - [`.agents/prompts/`](./.agents/prompts/): sanitized source prompts for traceability
 - [`.agents/plans/`](./.agents/plans/): scoped feature implementation plans
 
-
-Initial optimization target: **OpenAI Codex**.
-
 ## Planned Installation (When Published)
 
 ```bash
-<package-manager> add -D <package-name>
+<package-manager> add -D repo-hc
 ```
 
-The final package name is still pending. Until publish time, this repository is the source of truth for the workflow model and documentation.
+The package name is `repo-hc`. Until publish time, this repository is the source of truth for the workflow model and documentation.
 
 > [!TIP]
 > Start every AI-assisted task with [AGENTS.md](./AGENTS.md), then continue with [`.agents/README.md`](./.agents/README.md), then [docs/README.md](./docs/README.md).
