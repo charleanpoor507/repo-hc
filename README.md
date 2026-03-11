@@ -79,7 +79,6 @@ After `pnpm add repo-hc`, the package `postinstall` bootstraps these assets into
 - `.agents/`
 - `docs/`
 - `AGENTS.md` (canonical)
-- `AGENT.md` (compatibility alias generated from `AGENTS.md`)
 
 Existing files are preserved by default (non-destructive copy). To re-run manually:
 
