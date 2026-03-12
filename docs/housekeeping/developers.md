@@ -32,6 +32,7 @@ Current status: architecture and documentation baseline, package runtime not pub
 
 - `bin/repo-hc.cjs`: CLI entrypoint (`init`, `install`)
 - `lib/bootstrap.cjs`: non-destructive copy logic
+- `lib/vscode-settings.cjs`: VS Code `files.exclude` merge + prompt logic
 - `package.json` `postinstall`: runs `repo-hc install`
 
 Default install behavior copies these package assets to consumer root:
@@ -43,6 +44,8 @@ Default install behavior copies these package assets to consumer root:
 
 `install` is intentionally non-destructive and does not overwrite existing files.
 Use `repo-hc init --force` for explicit overwrite.
+When running in an interactive terminal, `install` prompts users to optionally hide `.agents`, `AGENTS.md`, and `AGENT.md` in VS Code by updating `.vscode/settings.json` without overwriting existing excludes. Existing VS Code JSON-with-comments settings are supported.
+Bootstrap filters `.agents` so that only `examples/` content is copied for `rules`, `learnings`, `plans`, and `prompts`; non-example files in those areas remain package-repository internal.
 
 ## Security Requirements
 
@@ -84,3 +87,4 @@ At minimum, validate:
 - [Housekeeping User Guide](./users.md)
 - [Housekeeping Package Architecture](../mermaid/housekeeping-architecture.md)
 - [Project Rules](../project/rules.md)
+
