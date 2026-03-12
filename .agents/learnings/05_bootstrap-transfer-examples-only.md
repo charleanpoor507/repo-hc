@@ -9,7 +9,7 @@
 `postinstall` previously copied full `.agents` trees, including repository-internal non-example files in `rules`, `learnings`, `plans`, and `prompts`.
 
 ## Decision
-- Keep bootstrap targets unchanged (`.agents`, `docs`, `AGENTS.md`, plus `AGENT.md` alias).
+- Keep bootstrap targets unchanged (`.agents`, `docs`, `AGENTS.md`).
 - Add `.agents` path filtering so:
   - `rules/examples/**` is copied
   - `learnings/examples/**` is copied

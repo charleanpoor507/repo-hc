@@ -94,7 +94,6 @@ If confirmed, it creates or updates `.vscode/settings.json` with `files.exclude`
 
 - `.agents`
 - `AGENTS.md`
-- `AGENT.md`
 
 Existing files are preserved by default (non-destructive copy). To re-run manually:
 

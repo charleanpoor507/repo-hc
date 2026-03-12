@@ -22,12 +22,11 @@ test("bootstrap copies required assets into target root", () => {
   fs.mkdirSync(targetRoot, { recursive: true });
 
   const summary = bootstrapProjectRoot({ sourceRoot, targetRoot, force: false });
-  assert.equal(summary.copiedFiles, 4);
+  assert.equal(summary.copiedFiles, 3);
   assert.equal(summary.skippedFiles, 0);
   assert.equal(summary.missingSources.length, 0);
 
   assert.equal(fs.readFileSync(path.join(targetRoot, "AGENTS.md"), "utf8"), "agents");
-  assert.equal(fs.readFileSync(path.join(targetRoot, "AGENT.md"), "utf8"), "agents");
   assert.equal(
     fs.readFileSync(path.join(targetRoot, ".agents", "rules", "examples", "01_rule.md"), "utf8"),
     "rule",
@@ -45,20 +44,17 @@ test("bootstrap skips existing files unless force is enabled", () => {
   writeFile(path.join(sourceRoot, "docs", "README.md"), "new-docs");
 
   writeFile(path.join(targetRoot, "AGENTS.md"), "existing-content");
-  writeFile(path.join(targetRoot, "AGENT.md"), "existing-content");
   writeFile(path.join(targetRoot, ".agents", "rules", "examples", "01_rule.md"), "existing-rule");
   writeFile(path.join(targetRoot, "docs", "README.md"), "existing-docs");
 
   const skippedSummary = bootstrapProjectRoot({ sourceRoot, targetRoot, force: false });
   assert.equal(skippedSummary.copiedFiles, 0);
-  assert.equal(skippedSummary.skippedFiles, 4);
+  assert.equal(skippedSummary.skippedFiles, 3);
   assert.equal(fs.readFileSync(path.join(targetRoot, "AGENTS.md"), "utf8"), "existing-content");
-  assert.equal(fs.readFileSync(path.join(targetRoot, "AGENT.md"), "utf8"), "existing-content");
 
   const forcedSummary = bootstrapProjectRoot({ sourceRoot, targetRoot, force: true });
-  assert.equal(forcedSummary.copiedFiles, 4);
+  assert.equal(forcedSummary.copiedFiles, 3);
   assert.equal(fs.readFileSync(path.join(targetRoot, "AGENTS.md"), "utf8"), "new-content");
-  assert.equal(fs.readFileSync(path.join(targetRoot, "AGENT.md"), "utf8"), "new-content");
 });
 
 test("bootstrap copies only examples for rules/learnings/plans/prompts under .agents", () => {

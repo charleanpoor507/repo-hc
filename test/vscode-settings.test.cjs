@@ -26,9 +26,8 @@ test("mergeFilesExcludeSettings adds missing agent patterns and preserves existi
 
   const result = mergeFilesExcludeSettings(existing, AGENT_FILES_EXCLUDE_DEFAULTS);
   assert.equal(result.changed, true);
-  assert.deepEqual(result.addedPatterns.sort(), [".agents", "AGENT.md"].sort());
+  assert.deepEqual(result.addedPatterns.sort(), [".agents"].sort());
   assert.equal(result.settings["files.exclude"]["AGENTS.md"], false);
-  assert.equal(result.settings["files.exclude"]["AGENT.md"], true);
   assert.equal(result.settings["files.exclude"][".agents"], true);
   assert.equal(result.settings["files.exclude"]["node_modules"], true);
   assert.equal(result.settings["editor.tabSize"], 2);
@@ -69,7 +68,6 @@ test("maybeConfigureAgentFilesExclude writes .vscode/settings.json when user con
   const writtenSettings = readJson(settingsPath);
   assert.equal(writtenSettings["files.exclude"][".agents"], true);
   assert.equal(writtenSettings["files.exclude"]["AGENTS.md"], true);
-  assert.equal(writtenSettings["files.exclude"]["AGENT.md"], true);
 });
 
 test("maybeConfigureAgentFilesExclude skips write when user declines", async () => {
@@ -115,7 +113,6 @@ test("maybeConfigureAgentFilesExclude is idempotent when all exclude patterns al
         "files.exclude": {
           ".agents": true,
           "AGENTS.md": true,
-          "AGENT.md": true,
         },
       },
       null,

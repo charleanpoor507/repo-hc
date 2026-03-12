@@ -13,7 +13,7 @@ Ensure `repo-hc` `postinstall` / `install` bootstrap only transfers example arti
 4. Update user/developer docs to reflect new bootstrap behavior.
 
 ## Non-Goals
-- Changing transfer behavior for `docs/`, `AGENTS.md`, or `AGENT.md`.
+- Changing transfer behavior for `docs/` or `AGENTS.md`.
 - Introducing new environment variables.
 
 ## Validation

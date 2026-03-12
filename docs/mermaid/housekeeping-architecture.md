@@ -45,7 +45,6 @@ flowchart LR
   COPY --> EXAMPLES["Only examples in rules/learnings/plans/prompts"]
   COPY --> DOCS["docs/"]
   COPY --> AGENTSFILE["AGENTS.md (canonical)"]
-  COPY --> AGENT["AGENT.md (alias)"]
   COPY --> SAFE["Non-destructive by default"]
   PROMPT -->|yes| VSCODE[".vscode/settings.json merge"]
   PROMPT -->|no/non-interactive| SKIP["No VS Code changes"]

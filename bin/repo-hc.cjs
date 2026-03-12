@@ -12,7 +12,7 @@ function printHelp() {
   console.log("  repo-hc install");
   console.log("");
   console.log("Commands:");
-  console.log("  init     Copy .agents, docs, AGENTS.md and compatibility AGENT.md into a project root.");
+  console.log("  init     Copy .agents, docs, and AGENTS.md into a project root.");
   console.log("  install  Internal command used by postinstall.");
   console.log("");
   console.log("Flags:");
@@ -43,7 +43,7 @@ function runBootstrap({ targetRoot, force, silent }) {
 
   console.log("[repo-hc] Bootstrap completed.");
   console.log(`[repo-hc] Target: ${path.resolve(targetRoot)}`);
-  console.log(`[repo-hc] Items: ${BOOTSTRAP_ITEMS.join(", ")} + AGENT.md compatibility alias`);
+  console.log(`[repo-hc] Items: ${BOOTSTRAP_ITEMS.join(", ")}`);
   console.log(`[repo-hc] Copied files: ${summary.copiedFiles}`);
   console.log(`[repo-hc] Skipped existing files: ${summary.skippedFiles}`);
   console.log(`[repo-hc] Created directories: ${summary.createdDirectories}`);

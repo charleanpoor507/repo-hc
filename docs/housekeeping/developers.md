@@ -40,11 +40,10 @@ Default install behavior copies these package assets to consumer root:
 - `.agents/`
 - `docs/`
 - `AGENTS.md`
-- `AGENT.md` (generated as compatibility alias from `AGENTS.md`)
 
 `install` is intentionally non-destructive and does not overwrite existing files.
 Use `repo-hc init --force` for explicit overwrite.
-When running in an interactive terminal, `install` prompts users to optionally hide `.agents`, `AGENTS.md`, and `AGENT.md` in VS Code by updating `.vscode/settings.json` without overwriting existing excludes. Existing VS Code JSON-with-comments settings are supported.
+When running in an interactive terminal, `install` prompts users to optionally hide `.agents` and `AGENTS.md` in VS Code by updating `.vscode/settings.json` without overwriting existing excludes. Existing VS Code JSON-with-comments settings are supported.
 Bootstrap filters `.agents` so that only `examples/` content is copied for `rules`, `learnings`, `plans`, and `prompts`; non-example files in those areas remain package-repository internal.
 
 ## Security Requirements
